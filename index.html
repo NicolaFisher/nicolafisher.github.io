@@ -52,14 +52,21 @@
         text-align: center;
     }
     
-    .navig a: {
-        display: block;
-        text-align: center;
-        padding: 16px 18px;        
+    .navig_description {
+        position: center;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        color: white;
+        visibility: hidden;
+        opacity: 0;
     }
     
-    .navig a:hover {
-        background-color: #000;
+    .navig:hover .navig_description {
+        visibility: visible;
+        opacity: 1;        
     }
 
 </style>   
@@ -69,7 +76,8 @@
     <h1><div>Welcome to my GitHub</div></h1>
     
     <div class="navig">
-      <a href="/index.html"><img src="/image/home.png" width = "50"></a>        
+      <a href="/index.html"><img src="/image/home.png" width = "50"></a>  
+        <p class="img_description"> Homepage </p>
       <a href="/PythonCode.html"><img src="/image/notepad.png" width = "50"></a>
     </div>
        
