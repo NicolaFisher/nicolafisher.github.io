@@ -45,23 +45,65 @@
         margin-left:100px;
         margin-right:100px;
     }
+    
+    .symbol {
+        position: relative;
+        width: 50%
+    }
 
     .navig {
         overflow: hidden;
         background-color: PowderBlue;
         text-align: center;
+        opacity: 0;
+        transition: .5s ease;
     }
-
+    
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    
+    .symbol:hover .navig {
+        opacity: 0.3;
+    }
+    
+    .symbol:hover .middle{
+        opacity: 1;
+    }
+    
+    .text{
+        background-color: whitesmoke;
+        color: black;
+        font-size: 16px;
+        padding: 16px 32px;
+        
+    }
 </style>   
 
 <body>
 
     <h1><div>Welcome to my GitHub</div></h1>
     
-    <div class="navig">
-      <a href="/index.html"><img src="/image/home.png" width = "30"></a>        
-      <a href="/PythonCode.html"><img src="/image/notepad.png" width = "30"></a>
+    <div class="symbol">
+        <img src="/image/home.png" class="navig" width="50">
+        <div class="middle">
+            <div class="text"> Homepage </div>
+        </div>
     </div>
+    
+    <div class="symbol">
+        <img src="/image/notepad.png" class="navig" width="50">
+        <div class="middle">
+            <div class="text"> Code </div>
+        </div>
+    </div>
+      
        
 <div class="jumbotron">
     <div class="container" style=background-color:PowderBlue style=color:White max-width:900px> 
