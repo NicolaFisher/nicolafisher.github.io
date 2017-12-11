@@ -1,76 +1,113 @@
 <html>
 <head>
+<title> Nicola Fisher Online Portfolio </title>
+
 <style>
     
-    .style {
-        width: 100%;
-        border: 1px powderblue;
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    
+    body {
+         font-family:arial;
+         color:DimGrey;
+    }
+
+    .header_footer {
+        color: white;
+        background-color: powderblue;  
+        
     }
     
     h1 {
-        color: white;
-        background-color: powderblue;
+        font-size:500%;
+        text-align:center;
+    }
+    
+    p { 
+        font-size:100%;
+        text-align: center;        
+    }
+
+     .navigation {
+        overflow: hidden;
+        background-color: PowderBlue;
         text-align: center;
     }
     
-    navigation {
-        float: left;
-        max-width: 100px;
-        padding: 30px;
-        margin-right: 30px;
-        background-color: powderblue;
+    .navigation a {
+        padding: 14px 16px;
     }
     
-    navigation ul {
-        list-style-type: none;
+    .container {
+        padding: 2em;
+        max-width: 900px; 
+        text-align: inherit;
+        border: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 50px;
     }
     
-    introduction {
-        margin-left: 30px;
-        border-left: 2px powderblue;
-        background-color: white;
-        color: DimGray;
+    p2 {
+        max-width:900px;
+        margin-bottom: 50px;
     }
     
-    h1 {	
+    h2 {	
         font-size:200%;
         max-width:900px;
         margin-left:100px;
         margin-right:100px;
     }
-    
-    p {	
-        font-size:100%;
+
+    h3 {
+        font-size:120%;
         max-width:900px;
         margin-left:100px;
         margin-right:100px;
+        margin-top: 50px;
     }
-
-</style>
-    </head>
     
+    p3 {
+        max-width:900px;
+        margin-bottom: 50px;
+    }
+    
+</style>   
+
 <body>
-    
-<div class="style">
 
-<header>
-    <h1>About me</h1>
-    </header>
-    
-<navigation>
-    <ul>
-        <li><a href="/index.html"><img src="/image/home.png" width = "50"></a></li>
-        <li><a href="/PythonCode.html"><img src="/image/notepad.png" width = "50"></a></li>    
-    </ul>
-</navigation>
-    
-<introduction>
-    <h2> This is where i will have a breif introduction</h2>
-    <p> hello my name is nicola mgkldfmgkldfn gkdf jjdbsdb  </p>
-    
-</introduction>
-
+    <div class="header_footer">
+    <h1>About me and my project</h1>
     </div>
     
-    </body>
+    <div class="navigation">
+        <a href="/index.html"><img src="/image/Index.png" width = "50"></a>
+        <a href="/AboutMe.html"><img src="/image/AboutMe.png" width = "50"></a>
+        <a href="/PythonCode.html"><img src="/image/PythonCode.png" width = "50"></a>
+    </div>
+    
+    <div class="container">
+        <h2>About me</h2>
+        <p2>Maybe add link to cv?</p2>
+          
+        <h2>My project</h2>
+        <h3>Title : Understanding dynamic pedestrian movements and transport flows within urban environments through sensor data</h3>
+        <p3>Sensor technology within cities are enabling new methods of estimating both transport and pedestrian flows. However, there are a range of technical challenges associated with the practical use of the data generated, and in particular how different sources can be conflated. This project explore various mechanisms of data fusion and will build models of estimated flow within urban contexts for current and future scenarios.</p3>
+        
+        </div>
+    
+    
+    <div class="header_footer">
+        <p><i>To see how this website has been created, feel free to visit my <a href="https://github.com/NicolaFisher/nicolafisher.github.io" style="color=white"><b>GitHub</b></a> page </i></p>
+    </div>
+       
+</body>          
 </html>
